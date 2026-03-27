@@ -2,6 +2,7 @@
 node_modules/
 logs/
 server/logs/
+public/assets/images/uploads/
 *.log
 .DS_Store
 npm-debug.log*
