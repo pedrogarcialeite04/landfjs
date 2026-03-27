@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FJS Topografia — Desde 1998 em São José do Rio Preto. Topografia, nivelamento, georreferenciamento e análise por drone. Leica TS 06 R400 e GPS GeoMax RTK Zenith 25 PRO.">
+  <meta name="theme-color" content="#141210">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FJS Topografia — Precisão Profissional">
+  <meta property="og:description" content="Levantamento topográfico profissional com tecnologia de ponta">
+  <meta property="og:image" content="./assets/images/basex1.png">
+  <meta property="og:url" content="https://fjstopografia.com.br">
+
+  <!-- Preconnect & DNS Prefetch -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+  <!-- Critical CSS Inline -->
+  <style>
+    :root{--color-deep-black:#141210;--color-teal:#2A9D8F;--color-text-body:#C4BCB2;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:Inter,sans-serif;background:var(--color-deep-black);color:var(--color-text-body);overflow-x:hidden;}
+    .navbar{position:fixed!important;top:0;left:0;right:0;z-index:5000;padding:1rem 1.5rem;transform:none!important;}
+    .navbar-inner{position:relative;z-index:5001;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem;min-height:3.5rem;max-width:1400px;margin:0 auto;padding:.45rem 1.5rem;border-radius:100px;background:transparent;border:none;}
+    .hero-section{min-height:100vh;position:relative;}
+    #hero{opacity:0;}
+    .hero-layout{opacity:0;}
+    .film-grain,.vignette-overlay{position:fixed;inset:0;pointer-events:none;}
+  </style>
+
+  <!-- Non-Critical CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/logo3.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/images/logo3.png">
+
+  <title>FJS Topografia — Topografia e projetos desde 1998</title>
+</head>
+<body>
+  <!-- Cinematic Overlays -->
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="vignette-overlay" aria-hidden="true"></div>
+
+  <!-- Skip Link (Acessibilidade) -->
+  <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+
+  <!-- ═══ NAVBAR ═══════════════════════════════════════ -->
+  <header class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="navbar-inner">
+      <a href="#" class="navbar-logo" aria-label="FJS Topografia — Home">
+        <img src="./assets/images/logo3.png" alt="Logo FJS Topografia" width="48" height="48" loading="eager">
+      </a>
+
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="nav-menu" class="nav-menu" role="menubar">
+        <a href="#sobre" class="nav-item" role="menuitem">Quem somos</a>
+        <a href="#servicos" class="nav-item" role="menuitem">Serviços</a>
+        <a href="#clientes" class="nav-item" role="menuitem">Clientes</a>
+        <a href="#contato" class="nav-item" role="menuitem">Contato</a>
+        <a href="#contato" class="nav-cta nav-cta--mobile" role="menuitem">Orçamento</a>
+      </nav>
+      <a href="#contato" class="nav-cta nav-cta--desktop" role="menuitem">Orçamento</a>
+    </div>
+  </header>
+
+  <!-- ═══ MAIN CONTENT ═════════════════════════════════ -->
+  <main id="main-content" role="main">
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section snap-section" aria-label="Seção principal">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg__parallax">
+          <img
+            src="./assets/images/basex1.png"
+            alt=""
+            class="hero-bg__image"
+            width="1920"
+            height="1280"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          >
+          <div class="hero-bg__image-shade" aria-hidden="true"></div>
+        </div>
+        <div class="hero-bg__scrim hero-bg__scrim--radial"></div>
+        <div class="hero-bg__scrim hero-bg__scrim--linear"></div>
+        <div class="hero-bg__accent-line"></div>
+      </div>
+
+      <div class="hero-layout">
+        <div class="hero-copy fx-tilt" data-tilt-max="6" data-tilt-lift="5">
+          <p class="hero-eyebrow">
+            <span class="hero-eyebrow__mark" aria-hidden="true"></span>
+            Topografia e projetos
+          </p>
+          <h1 class="hero-title"><span class="hero-title__brand">FJS</span> <span class="highlight">Topografia</span></h1>
+          <p class="hero-subtitle">Empresa no mercado <strong>desde 1998</strong>, com equipe qualificada e equipamentos de última geração — <strong>Estação Total Leica TS 06 R400</strong> e <strong>GPS GeoMax RTK Zenith 25 PRO</strong>.</p>
+
+          <p class="hero-equipment" aria-label="Equipamentos">
+            <span class="hero-equipment__item">Leica TS 06 R400</span>
+            <span class="hero-equipment__sep">·</span>
+            <span class="hero-equipment__item">GeoMax RTK Zenith 25 PRO</span>
+          </p>
+
+          <ul class="hero-trust" aria-label="Diferenciais">
+            <li>São José do Rio Preto — atendimento regional</li>
+            <li>Levantamentos, demarcação e locação de obra</li>
+            <li>Georreferenciamento e análise de terreno por drone</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span></span>
+        <small>Explorar</small>
+      </div>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section id="sobre" class="section-container snap-section" aria-label="Quem somos">
+      <div class="sobre-bg-media" aria-hidden="true">
+        <img
+          src="./assets/images/plan2.png"
+          alt=""
+          class="sobre-bg__photo"
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="sobre-bg__image-shade"></div>
+      </div>
+      <div class="sobre-bg-gradients" aria-hidden="true"></div>
+      <div class="section-header">
+        <h2>FJS <span class="highlight">Topografia</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-lead">A nossa empresa esta no mercado desde 1998 atuando na área de engenharia da agrimensura. Executando serviços de levantamento topográfico, demarcação, locação de obra, nivelamento, cálculo de volumetria e Georreferenciamento. A empresa foi fundada no ano de 1998 , em São José do Rio Preto e sua principal missão é oferecer serviços topográficos com precisão para que sua construção sai conforme o planejado sem nada para atrapalhar.</p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text reveal-text">
+          <p>A <strong>FJS topografia</strong>  é uma empresa conceituada pelos seus diversos serviços prestados com <STRONg>total qualidade e eficiência</STRONg>, procurada para fundação de obras e projetos conhecidos, tais como: <strong>a topografia do inicio Plaza avenida shopping, os prédios  do shopping Iguatemi, fez parte da modificação da UNIMED</strong> dentre outros projetos já realizados. O reconhecimento de seus clientes e parceria dos seus serviços prestado estão alguns nomes conhecido pela cidade de <strong>São José do Rio Preto</strong>.</p>
+        </div>
+
+        <div class="stats-container">
+          <article class="stat-card fx-tilt" data-tilt-max="10" data-tilt-lift="7">
+            <h3 class="stat-value" data-target="23" data-suffix="+">0</h3>
+            <p class="stat-label">Anos no mercado</p>
+          </article>
+          <article class="stat-card fx-tilt" data-tilt-max="10" data-tilt-lift="7">
+            <h3 class="stat-value" data-target="3600" data-suffix="+">0</h3>
+            <p class="stat-label">Clientes atendidos</p>
+          </article>
+          <article class="stat-card fx-tilt" data-tilt-max="10" data-tilt-lift="7">
+            <h3 class="stat-value" data-target="7" data-suffix="+">0</h3>
+            <p class="stat-label">Linhas de serviço</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section-container dark snap-section" aria-label="Serviços oferecidos">
+      <div class="servicos-bg-media" aria-hidden="true">
+        <img
+          src="./assets/images/aee.jpg"
+          alt=""
+          class="servicos-bg__photo"
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="servicos-bg__image-shade"></div>
+      </div>
+      <div class="servicos-bg-gradients" aria-hidden="true"></div>
+      <div class="section-header">
+        <h2>Nossos <span class="highlight">Serviços</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="card-grid">
+        <a href="./servico.html?s=levantamento-topografico" class="card service-card fx-tilt" data-tilt-max="9" data-tilt-lift="6">
+          <div class="service-card__media" aria-hidden="true">
+            <img src="./assets/images/levantamento-topografico/levantamento-topografico-.jpg" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Levantamento topográfico</h3>
+          <p>O levantamento topográfico planialtimétrico é a primeira etapa do processo para elaboração de projetos na construção civil.</p>
+          <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a href="./servico.html?s=nivelamento" class="card service-card fx-tilt" data-tilt-max="9" data-tilt-lift="6">
+          <div class="service-card__media" aria-hidden="true">
+            <img src="./assets/images/nivelamento/nivelamento-de-terreno.jpg" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M4 14h16M4 18h10M4 10h16M4 6h8" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Nivelamento</h3>
+          <p>Determinação de diferenças de altitude e referência para obras e infraestrutura.</p>
+          <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a href="./servico.html?s=demarcacao" class="card service-card fx-tilt" data-tilt-max="9" data-tilt-lift="6">
+          <div class="service-card__media" aria-hidden="true">
+            <img src="./assets/images/demarcacao/herodem.jpg" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke-width="1.5"/>
+              <circle cx="12" cy="10" r="3" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Demarcação</h3>
+          <p>Marcos, confrontações e suporte à delimitação de limites com rigor técnico.</p>
+          <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a href="./servico.html?s=locacao-de-obra" class="card service-card fx-tilt" data-tilt-max="9" data-tilt-lift="6">
+          <div class="service-card__media" aria-hidden="true">
+            <img src="./assets/images/locacao-de-obra/hero1231.png" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Locação de obra</h3>
+          <p>Transferência do projeto ao campo — fundações, eixos, cotas e alinhamentos.</p>
+          <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a href="./servico.html?s=calculo-de-volumetria" class="card service-card fx-tilt" data-tilt-max="9" data-tilt-lift="6">
+          <div class="service-card__media" aria-hidden="true">
+            <img src="./assets/images/calculo-de-volumetria/calcular-taxa-de-ocupacao.png" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M12 3v18M8 10h11l-3 4 3 4H8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Cálculo de volumetria</h3>
+          <p>Quantificação de volumes de corte, aterro e estoque com base em levantamento.</p>
+          <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a href="./servico.html?s=georreferenciamento" class="card service-card fx-tilt" data-tilt-max="9" data-tilt-lift="6">
+          <div class="service-card__media" aria-hidden="true">
+            <img src="./assets/images/geo/fdg.jfif" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Georreferenciamento</h3>
+          <p>Amarração de imóveis rurais e coordenadas aos sistemas oficiais, com GPS de precisão.</p>
+          <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a href="./servico.html?s=analise-por-drone" class="card service-card fx-tilt" data-tilt-max="9" data-tilt-lift="6">
+          <div class="service-card__media" aria-hidden="true">
+            <img src="./assets/images/drone/vantagens-topografia-com-drone.jpeg" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M12 19V5M5 12l7-7 7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Análise de terreno por drone</h3>
+          <p>Mapeamento aéreo e levantamentos em áreas amplas ou de difícil acesso terrestre.</p>
+          <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CLIENTES -->
+    <section id="clientes" class="section-container dark clientes-section snap-section" aria-label="Nossos clientes">
+      <div class="clientes-bg-media" aria-hidden="true">
+        <img
+          src="./assets/images/basex2.png"
+          alt=""
+          class="clientes-bg__photo"
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="clientes-bg__image-shade"></div>
+      </div>
+      <div class="clientes-bg-gradients" aria-hidden="true"></div>
+      <div class="section-header">
+        <h2>Nossos <span class="highlight">Clientes</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-lead section-lead--accent">Empresas e profissionais que confiam na FJS Topografia para seus projetos. Parcerias construídas com precisão e comprometimento.</p>
+      </div>
+
+      <div class="clientes-grid">
+        <div class="cliente-card">
+          <img src="./assets/images/uploads/Tarraf.png" alt="Tarraf" loading="lazy">
+        </div>
+        <div class="cliente-card">
+          <img src="./assets/images/uploads/DL2.png" alt="DL2" loading="lazy">
+        </div>
+        <div class="cliente-card">
+          <img src="./assets/images/uploads/gaivota2-300x138.png" alt="Gaivota" loading="lazy">
+        </div>
+        <div class="cliente-card">
+          <img src="./assets/images/uploads/iben_engenharia-300x300.png" alt="Iben Engenharia" loading="lazy">
+        </div>
+        <div class="cliente-card">
+          <img src="./assets/images/uploads/jho.png" alt="JHO" loading="lazy">
+        </div>
+        <div class="cliente-card">
+          <img src="./assets/images/uploads/SETPAR-INCORPORAES-300x198.png" alt="Setpar Incorporações" loading="lazy">
+        </div>
+        <div class="cliente-card">
+          <img src="./assets/images/uploads/settimo-br.gif" alt="Settimo" loading="lazy">
+        </div>
+        <div class="cliente-card">
+          <img src="./assets/images/uploads/30XuqCLB-300x300.jpg" alt="Cliente" loading="lazy">
+        </div>
+        <div class="cliente-card">
+          <img src="./assets/images/uploads/unnamed.jpg" alt="Cliente" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section-container dark contact-section snap-section" aria-label="Entre em contato">
+      <div class="contato-bg-media" aria-hidden="true">
+        <img
+          src="./assets/images/basex3.png"
+          alt=""
+          class="contato-bg__photo"
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="contato-bg__image-shade"></div>
+      </div>
+      <div class="contato-bg-gradients" aria-hidden="true"></div>
+      <div class="section-header">
+        <h2>Entre em <span class="highlight">contato</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-lead section-lead--accent">Solicite uma visita, tire dúvidas e obtenha mais informações. Fale conosco e descubra tudo o que a FJS Topografia pode oferecer ao seu projeto.</p>
+      </div>
+
+      <div class="contact-container">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group floating">
+            <input type="text" id="contact-name" name="name" placeholder=" " required autocomplete="name" aria-label="Seu nome">
+            <label for="contact-name">Nome Completo</label>
+          </div>
+
+          <div class="form-group floating">
+            <input type="email" id="contact-email" name="email" placeholder=" " required autocomplete="email" aria-label="Seu e-mail">
+            <label for="contact-email">E-mail</label>
+          </div>
+
+          <div class="form-group floating">
+            <input type="tel" id="contact-phone" name="phone" placeholder=" " autocomplete="tel" aria-label="Seu telefone">
+            <label for="contact-phone">Telefone (opcional)</label>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Mensagem</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Descreva seu projeto..." required aria-label="Sua mensagem"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+          <div class="form-success" id="form-success">Abrindo o WhatsApp com sua mensagem. Envie o texto quando estiver pronto.</div>
+        </form>
+
+        <div class="contact-info">
+          <article class="info-card fx-tilt" data-tilt-max="8" data-tilt-lift="5">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke-width="1.8"/></svg>
+            </div>
+            <h3>Endereço</h3>
+            <p>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=R.%20Moys%C3%A9s%20Miguel%20Haddad%2C%20280%20-%20Jardim%20Canaa%2C%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20-%20SP%2C%2015030-130%2C%20Brasil" target="_blank" rel="noopener noreferrer" aria-label="Abrir endereço da FJS Topografia no Google Maps">
+                R. Moysés Miguel Haddad, 280 - Jardim Canaa, São José do Rio Preto - SP, 15030-130, Brasil
+              </a>
+            </p>
+          </article>
+          <article class="info-card fx-tilt" data-tilt-max="8" data-tilt-lift="5">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Telefone</h3>
+            <a href="tel:+551732224247">(17) 3222-4247</a>
+          </article>
+          <article class="info-card fx-tilt" data-tilt-max="8" data-tilt-lift="5">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/5517997712838" target="_blank" rel="noopener noreferrer">(17) 99771-2838 — conversar agora</a>
+          </article>
+          <article class="info-card fx-tilt" data-tilt-max="8" data-tilt-lift="5">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 6l-10 7L2 6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>E-mail</h3>
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=atendimento%40fjstopografia.com.br" target="_blank" rel="noopener noreferrer" aria-label="Abrir Gmail para enviar e-mail à FJS Topografia">atendimento@fjstopografia.com.br</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>&copy; FJS Topografia — São José do Rio Preto, SP. Todos os direitos reservados.</p>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+      </nav>
+    </div>
+    <div class="social-links-wrap" aria-label="Redes sociais">
+      <div class="social-card-links">
+        <a href="https://www.instagram.com/fjs.topografia?igsh=dmVtc3R2cjZyOHVt" class="socialContainer containerOne" aria-label="Instagram">
+          <svg class="socialSvg instagramSvg" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zM12.271 2.77a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/share/1GC83dfzEn/?mibextid=wwXIfr" class="socialContainer containerTwo" aria-label="Facebook">
+          <svg class="socialSvg facebookSvg" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M16 8.05C16 3.605 12.418 0 8 0S0 3.605 0 8.05c0 4.017 2.925 7.347 6.75 7.95v-5.624H4.719V8.05H6.75V6.276c0-2.017 1.194-3.132 3.023-3.132.875 0 1.79.158 1.79.158v1.98h-1.008c-.993 0-1.303.623-1.303 1.262V8.05h2.219l-.355 2.326H9.252V16C13.076 15.397 16 12.067 16 8.05z"></path>
+          </svg>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=atendimento%40fjstopografia.com.br" class="socialContainer containerThree" aria-label="Gmail" target="_blank" rel="noopener noreferrer">
+          <svg class="socialSvg gmailSvg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6.5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1z"></path>
+            <path d="M3.5 7.5 12 14l8.5-6.5"></path>
+          </svg>
+        </a>
+        <a href="https://wa.me/5517997712838" class="socialContainer containerFour" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+          <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-progress-btn" id="scroll-progress-btn" type="button" aria-label="Voltar ao topo">
+    <span class="scroll-progress-btn__ring" aria-hidden="true">
+      <span class="scroll-progress-btn__inner">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 17V7M12 7l-5 5M12 7l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </span>
+  </button>
+
+  <!-- ═══ SCRIPTS ══════════════════════════════════════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "FJS Topografia",
+    "image": "./assets/images/logo3.png",
+    "description": "Levantamento topográfico profissional com tecnologia de ponta",
+    "telephone": "+551732224247",
+    "email": "atendimento@fjstopografia.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Moyses Miguel Haddad, 280, Jd. Canaã",
+      "postalCode": "15030-130",
+      "addressLocality": "São José do Rio Preto",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+</body>
+</html>

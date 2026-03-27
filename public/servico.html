@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FJS Topografia — Serviço profissional com tecnologia de ponta em São José do Rio Preto.">
+  <meta name="theme-color" content="#141210">
+  <meta name="robots" content="index, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+  <style>
+    :root{--color-deep-black:#141210;--color-teal:#2A9D8F;--color-text-body:#C4BCB2;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:Inter,sans-serif;background:var(--color-deep-black);color:var(--color-text-body);overflow-x:hidden;}
+    .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 1.5rem;}
+    .navbar-inner{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem;min-height:3.5rem;max-width:1400px;margin:0 auto;padding:.45rem 1.5rem;border-radius:100px;background:transparent;border:none;}
+    .film-grain,.vignette-overlay{position:fixed;inset:0;pointer-events:none;}
+    .servico-hero{min-height:60vh;position:relative;opacity:0;}
+  </style>
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/servico.css">
+
+  <link rel="icon" href="./assets/images/logo3.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/images/logo3.png">
+
+  <title>FJS Topografia — Serviço</title>
+</head>
+<body>
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="vignette-overlay" aria-hidden="true"></div>
+
+  <a href="#servico-content" class="skip-link">Pular para conteúdo principal</a>
+
+  <!-- ═══ MAIN ═════════════════════════════════════════ -->
+  <main id="servico-content" role="main">
+
+    <!-- HERO DO SERVIÇO -->
+    <section class="servico-hero" aria-label="Serviço">
+      <div class="servico-hero__bg" aria-hidden="true">
+        <img src="./assets/images/basex1.png" alt="" class="servico-hero__img" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async">
+        <div class="servico-hero__shade"></div>
+        <div class="servico-hero__scrim"></div>
+      </div>
+      <div class="servico-hero__content">
+        <a href="./index.html#servicos" class="servico-breadcrumb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Todos os serviços
+        </a>
+        <div class="servico-hero__icon" id="servico-icon"></div>
+        <h1 class="servico-hero__title" id="servico-title">Carregando...</h1>
+        <p class="servico-hero__lead" id="servico-lead"></p>
+      </div>
+    </section>
+
+    <!-- CONTEÚDO DETALHADO -->
+    <section class="servico-body">
+      <div class="servico-body__inner">
+        <div class="servico-detail" id="servico-detail"></div>
+
+        <aside class="servico-sidebar">
+          <div class="servico-cta-card">
+            <h3>Precisa deste serviço?</h3>
+            <p>Solicite um orçamento sem compromisso. Nossa equipe responde em até 24 horas.</p>
+            <a href="./index.html#contato" class="btn btn-primary">Solicitar orçamento</a>
+            <a href="https://wa.me/5517997712838" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">WhatsApp direto</a>
+          </div>
+
+          <div class="servico-outros" id="servico-outros">
+            <h4>Outros serviços</h4>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>&copy; FJS Topografia — São José do Rio Preto, SP. Todos os direitos reservados.</p>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+      </nav>
+    </div>
+    <div class="social-links-wrap" aria-label="Redes sociais">
+      <div class="social-card-links">
+        <a href="https://www.instagram.com/fjs.topografia?igsh=dmVtc3R2cjZyOHVt" class="socialContainer containerOne" aria-label="Instagram">
+          <svg class="socialSvg instagramSvg" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zM12.271 2.77a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/share/1GC83dfzEn/?mibextid=wwXIfr" class="socialContainer containerTwo" aria-label="Facebook">
+          <svg class="socialSvg facebookSvg" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M16 8.05C16 3.605 12.418 0 8 0S0 3.605 0 8.05c0 4.017 2.925 7.347 6.75 7.95v-5.624H4.719V8.05H6.75V6.276c0-2.017 1.194-3.132 3.023-3.132.875 0 1.79.158 1.79.158v1.98h-1.008c-.993 0-1.303.623-1.303 1.262V8.05h2.219l-.355 2.326H9.252V16C13.076 15.397 16 12.067 16 8.05z"></path>
+          </svg>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=atendimento%40fjstopografia.com.br" class="socialContainer containerThree" aria-label="Gmail" target="_blank" rel="noopener noreferrer">
+          <svg class="socialSvg gmailSvg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6.5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1z"></path>
+            <path d="M3.5 7.5 12 14l8.5-6.5"></path>
+          </svg>
+        </a>
+        <a href="https://wa.me/5517997712838" class="socialContainer containerFour" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+          <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="./assets/js/servico.js" defer></script>
+</body>
+</html>
