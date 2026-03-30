@@ -187,6 +187,54 @@
         './assets/images/drone/DJI_0014.jpg',
         './assets/images/drone/DJI_0016.jpg'
         ]
+    },
+    'obra-damha-fit': {
+      title: 'Obra Damha Fit',
+      lead: 'Acompanhamento técnico da obra com topografia aplicada para garantir precisão, prazos e segurança de execução.',
+      icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 20h16M6 20V9l6-4 6 4v11M9 14h6M9 17h6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      detail:
+        
+        '<ul class="servico-features">' +
+          '<li><strong>Serviço de Drone</strong> </li>' +
+          '<li><strong>Locação de Estaca</strong>  </li>' +
+          '<li><strong>Marcação da Fundação Primária</strong>  </li>' +
+          '<li><strong>Marcação de Eixo do Gabarito</strong>  </li>' +
+          '<li><strong>Estação Total</strong> </li>' +
+        '</ul>',
+      photos: [
+        './assets/images/nv-trab/img-3.jpeg',
+        './assets/images/nv-trab/img-5.jpeg',
+        './assets/images/nv-trab/img-6.jpeg',
+        './assets/images/nv-trab/img-7.jpeg',
+        './assets/images/nv-trab/img-8.jpeg',
+        './assets/images/nv-trab/WhatsApp Image 2026-03-28 at 08.42.03.jpeg',
+        './assets/images/nv-trab/WhatsApp Image 2026-03-28 at 08.42.04.jpeg',
+        './assets/images/nv-trab/WhatsApp Image 2026-03-28 at 08.42.05.jpeg'        
+      ]
+    },
+    'predio-lupema-construtora': {
+      title: 'Predio Lupema Construtora',
+      lead: 'Acompanhamento topográfico de obra para garantir alinhamento, nível e execução conforme o projeto.',
+      icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 20h16M7 20V8l5-3 5 3v12M10 12h4M10 15h4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      detail:
+        '<h2></h2>' +
+        '<h2>Aplicações</h2>' +
+        '<ul class="servico-features">' +
+          '<li><strong>Marcação de Fundação</strong> </li>' +
+          '<li><strong>Marcação de Terra Planagem</strong> </li>' +
+          '<li><strong>Locação de Estacas de Cortina</strong> </li>' +
+          '<li><strong>Estacas do Predio</strong> </li>' +
+        '</ul>',
+      photos: [
+        './assets/images/lupema/img1.jpeg',
+        './assets/images/lupema/img2.jpeg',
+        './assets/images/lupema/img3.jpeg',
+        './assets/images/lupema/img4.jpeg',
+        './assets/images/lupema/img5.jpeg',
+        './assets/images/lupema/img6.jpeg',
+        './assets/images/lupema/img7.jpeg'
+        
+      ]
     }
   };
 
@@ -206,6 +254,51 @@
   document.getElementById('servico-title').textContent = servico.title;
   document.getElementById('servico-lead').textContent = servico.lead;
   var heroImageEl = document.querySelector('.servico-hero__img');
+  var heroVideoEl = document.querySelector('.servico-hero__video');
+  function disableHeroVideo() {
+    if (!heroVideoEl) return;
+    heroVideoEl.pause();
+    heroVideoEl.style.display = 'none';
+    heroVideoEl.removeAttribute('src');
+    while (heroVideoEl.firstChild) {
+      heroVideoEl.removeChild(heroVideoEl.firstChild);
+    }
+    var emptySource = document.createElement('source');
+    emptySource.src = '';
+    emptySource.type = 'video/mp4';
+    heroVideoEl.appendChild(emptySource);
+    heroVideoEl.load();
+  }
+  function enableHeroVideo(src) {
+    if (!heroVideoEl || !heroImageEl) return;
+    while (heroVideoEl.firstChild) {
+      heroVideoEl.removeChild(heroVideoEl.firstChild);
+    }
+    var source = document.createElement('source');
+    source.src = src;
+    source.type = 'video/mp4';
+    heroVideoEl.appendChild(source);
+    heroVideoEl.muted = true;
+    heroVideoEl.defaultMuted = true;
+    heroVideoEl.loop = true;
+    heroVideoEl.autoplay = true;
+    heroVideoEl.setAttribute('muted', '');
+    heroVideoEl.setAttribute('loop', '');
+    heroVideoEl.setAttribute('autoplay', '');
+    heroVideoEl.setAttribute('playsinline', '');
+    heroVideoEl.style.display = 'block';
+    heroImageEl.style.display = 'none';
+    heroVideoEl.load();
+    var playPromise = heroVideoEl.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(function () { /* sem impacto crítico */ });
+    }
+    heroVideoEl.addEventListener('error', function () {
+      heroVideoEl.style.display = 'none';
+      heroImageEl.style.display = '';
+    }, { once: true });
+  }
+  disableHeroVideo();
   if (heroImageEl && slug === 'levantamento-topografico') {
     heroImageEl.src = './assets/images/levantamento-topografico/levantamento-topografico-.jpg';
   }
@@ -228,6 +321,13 @@
   if (heroImageEl && slug === 'analise-por-drone') {
     heroImageEl.src = './assets/images/drone/vantagens-topografia-com-drone.jpeg';
   }
+  if (heroImageEl && slug === 'obra-damha-fit') {
+    heroImageEl.src = './assets/images/aee.jpg';
+    enableHeroVideo('./assets/images/nv-trab/vd.mp4');
+  }
+  if (heroImageEl && slug === 'predio-lupema-construtora') {
+    heroImageEl.src = './assets/images/lupema/img7.jpeg';
+  }
   var whatsappBtn = document.querySelector('.servico-cta-card .btn-secondary');
   var whatsappMessages = {
     'levantamento-topografico': 'Ola! Vi o servico de Levantamento Topografico no site e tenho interesse em solicitar um orcamento.',
@@ -236,7 +336,9 @@
     'locacao-de-obra': 'Ola! Vi o servico de Locacao de Obra no site e tenho interesse em solicitar um orcamento.',
     'calculo-de-volumetria': 'Ola! Vi o servico de Calculo de Volumetria no site e tenho interesse em solicitar um orcamento.',
     'georreferenciamento': 'Ola! Vi o servico de Georreferenciamento no site e tenho interesse em solicitar um orcamento.',
-    'analise-por-drone': 'Ola! Vi o servico de Analise de Terreno por Drone no site e tenho interesse em solicitar um orcamento.'
+    'analise-por-drone': 'Ola! Vi o servico de Analise de Terreno por Drone no site e tenho interesse em solicitar um orcamento.',
+    'obra-damha-fit': 'Ola! Vi o servico prestado para a Damha Fit no site e gostaria de saber mais sobre como funciona esse trabalho.',
+    'predio-lupema-construtora': 'Ola! Vi o servico prestado para a Lupema Construtora no site e gostaria de saber mais sobre como funciona esse trabalho.'
   };
   if (whatsappBtn) {
     var baseWhatsapp = 'https://wa.me/5517997712838';
@@ -250,11 +352,17 @@
   function renderCarousel(photos, opts) {
     opts = opts || {};
     var title = opts.title || 'Fotos do serviço';
-    var subtitle = opts.subtitle || 'Registros reais de campo e execução.';
+    var subtitle = opts.subtitle || ((slug === 'obra-damha-fit' || slug === 'predio-lupema-construtora')
+      ? 'Acompanhamento visual profissional da execução da obra.'
+      : 'Registros reais de campo e execução.');
     var carouselKey = opts.carouselKey || slug;
 
     var section = document.createElement('section');
     section.className = 'servico-gallery';
+    if (slug === 'obra-damha-fit' || slug === 'predio-lupema-construtora') {
+      section.classList.add('servico-gallery--damha-fit');
+      section.setAttribute('data-gallery-badge', slug === 'predio-lupema-construtora' ? 'Lupema' : 'Damha Fit');
+    }
     section.innerHTML =
       '<div class="servico-gallery__head">' +
         '<h2>' + title + '</h2>' +
@@ -262,6 +370,18 @@
       '</div>';
 
     if (!photos || !photos.length) {
+      if (slug === 'predio-lupema-construtora') {
+        section.innerHTML +=
+          '<div class="servico-gallery__placeholders" aria-hidden="true">' +
+            '<span class="servico-gallery__slot"></span>' +
+            '<span class="servico-gallery__slot"></span>' +
+            '<span class="servico-gallery__slot"></span>' +
+            '<span class="servico-gallery__slot"></span>' +
+          '</div>' +
+          '<p class="servico-gallery__empty">Espaços reservados para as imagens deste serviço.</p>';
+        detailEl.appendChild(section);
+        return null;
+      }
       section.innerHTML += '<p class="servico-gallery__empty">Em breve adicionaremos fotos deste serviço.</p>';
       detailEl.appendChild(section);
       return null;

@@ -188,6 +188,56 @@
     window.addEventListener('resize', onResize, { passive: true });
   }
 
+  function shouldUseThreeHero() {
+    return window.matchMedia('(min-width: 1024px)').matches && !lowPowerMode;
+  }
+
+  function loadThreeScript() {
+    return new Promise(function (resolve, reject) {
+      if (window.THREE) {
+        resolve();
+        return;
+      }
+      var existing = document.querySelector('script[data-threejs-cdn="1"]');
+      if (existing) {
+        existing.addEventListener('load', function () { resolve(); }, { once: true });
+        existing.addEventListener('error', function () { reject(new Error('three.js falhou ao carregar')); }, { once: true });
+        return;
+      }
+      var script = document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+      script.defer = true;
+      script.setAttribute('data-threejs-cdn', '1');
+      script.onload = function () { resolve(); };
+      script.onerror = function () { reject(new Error('three.js falhou ao carregar')); };
+      document.head.appendChild(script);
+    });
+  }
+
+  function setupAnchorNavigation() {
+    var navbarEl = document.querySelector('.navbar');
+    function getOffsetTop(targetEl) {
+      var navHeight = navbarEl ? navbarEl.getBoundingClientRect().height : 0;
+      var extraGap = 8;
+      var top = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight - extraGap;
+      return Math.max(0, top);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      var href = link.getAttribute('href');
+      if (!href || href === '#' || link.classList.contains('skip-link')) return;
+      var target = document.querySelector(href);
+      if (!target) return;
+
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        var top = getOffsetTop(target);
+        window.scrollTo({ top: top, behavior: reduceMotion ? 'auto' : 'smooth' });
+        history.replaceState(null, '', href);
+      });
+    });
+  }
+
   // ═══════════════════════════════════════════════════
   // Tilt 3D nos cartões
   // ═══════════════════════════════════════════════════
@@ -780,8 +830,17 @@
   // INIT
   // ═══════════════════════════════════════════════════
   document.addEventListener('DOMContentLoaded', function () {
-    initDesktopThreeHero();
+    if (shouldUseThreeHero()) {
+      loadThreeScript()
+        .then(function () {
+          initDesktopThreeHero();
+        })
+        .catch(function () {
+          // Sem impacto crítico para navegação/conteúdo.
+        });
+    }
     bindFxTilt(document);
+    setupAnchorNavigation();
   });
 
   window.addEventListener('load', function () {

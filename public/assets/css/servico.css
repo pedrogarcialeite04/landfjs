@@ -29,6 +29,16 @@
   transform: scale(1);
   will-change: transform;
 }
+.servico-hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  filter: saturate(0.7) brightness(0.72) contrast(1.08);
+  display: none;
+}
 .servico-hero__shade {
   position: absolute;
   inset: 0;
@@ -247,6 +257,25 @@
   color: var(--color-text-muted);
   margin: 0;
 }
+.servico-gallery__placeholders {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.servico-gallery__slot {
+  display: block;
+  min-height: 180px;
+  border-radius: var(--radius-lg);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  background:
+    linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.02) 45%,
+      rgba(20, 24, 32, 0.28) 100%
+    );
+}
 
 .servico-carousel {
   display: grid;
@@ -351,6 +380,79 @@
   opacity: 0.35;
   cursor: not-allowed;
   transform: none;
+}
+
+/* Personalizacao exclusiva da galeria Damha Fit */
+.servico-gallery--damha-fit {
+  position: relative;
+  border: 1px solid rgba(255, 185, 96, 0.28);
+  background:
+    linear-gradient(145deg, rgba(255, 194, 122, 0.08) 0%, rgba(255, 194, 122, 0.02) 35%, rgba(20, 24, 32, 0.32) 100%),
+    rgba(22, 26, 34, 0.78);
+  box-shadow:
+    0 24px 60px rgba(6, 8, 12, 0.45),
+    0 0 0 1px rgba(255, 194, 122, 0.06) inset;
+}
+.servico-gallery--damha-fit::before {
+  content: attr(data-gallery-badge);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 3;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1d1306;
+  background: linear-gradient(135deg, #ffd88f 0%, #ffb451 100%);
+  border: 1px solid rgba(255, 227, 173, 0.75);
+  box-shadow: 0 8px 22px rgba(255, 180, 81, 0.25);
+}
+.servico-gallery--damha-fit .servico-gallery__head h2 {
+  color: #ffe2b2;
+}
+.servico-gallery--damha-fit .servico-gallery__head p {
+  color: rgba(255, 236, 202, 0.8);
+}
+.servico-gallery--damha-fit .servico-carousel__track {
+  gap: calc(var(--space-4) + 2px);
+}
+.servico-gallery--damha-fit .servico-carousel__slide {
+  border-color: rgba(255, 185, 96, 0.24);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.28),
+    0 0 0 1px rgba(255, 194, 122, 0.08) inset;
+}
+.servico-gallery--damha-fit .servico-carousel__slide img {
+  height: 260px;
+  filter: saturate(1.02) brightness(0.94) contrast(1.05);
+}
+.servico-gallery--damha-fit .servico-carousel__slide:hover img {
+  transform: scale(1.06);
+  filter: saturate(1.08) brightness(1);
+}
+.servico-gallery--damha-fit .servico-carousel__btn {
+  border-color: rgba(255, 185, 96, 0.42);
+  color: #ffd08f;
+  background: rgba(16, 20, 28, 0.82);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+.servico-gallery--damha-fit .servico-carousel__btn:hover {
+  border-color: rgba(255, 205, 135, 0.72);
+  color: #ffe2b2;
+  box-shadow: 0 14px 30px rgba(255, 180, 81, 0.2);
+}
+.servico-gallery--damha-fit .servico-carousel__counter {
+  color: rgba(255, 233, 190, 0.92);
+}
+.servico-gallery--damha-fit .servico-carousel__progress {
+  background: rgba(255, 205, 135, 0.18);
+}
+.servico-gallery--damha-fit .servico-carousel__progress-fill {
+  background: linear-gradient(90deg, #ffb451, #ffe0ac);
+  box-shadow: 0 0 14px rgba(255, 180, 81, 0.35);
 }
 
 .servico-lightbox {
@@ -697,6 +799,13 @@
     font-size: 0.88rem;
     margin-bottom: var(--space-4);
   }
+  .servico-gallery__placeholders {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  .servico-gallery__slot {
+    min-height: 150px;
+  }
   .servico-carousel {
     position: relative;
     grid-template-columns: 1fr;
@@ -745,6 +854,14 @@
   }
   .servico-carousel__progress {
     height: 4px;
+  }
+  .servico-gallery--damha-fit::before {
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 0.62rem;
+  }
+  .servico-gallery--damha-fit .servico-carousel__slide img {
+    height: 220px;
   }
 
   .servico-lightbox__dialog {
@@ -816,6 +933,9 @@
   }
   .servico-carousel__slide img {
     height: 170px;
+  }
+  .servico-gallery--damha-fit .servico-carousel__slide img {
+    height: 180px;
   }
   .servico-carousel__btn {
     width: 30px;
