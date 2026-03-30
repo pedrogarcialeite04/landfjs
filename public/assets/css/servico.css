@@ -85,8 +85,8 @@
   gap: var(--space-3);
   padding: var(--space-2) var(--space-4) var(--space-2) var(--space-3);
   border-radius: var(--radius-full);
-  background: rgba(42,157,143,0.08);
-  border: 1px solid rgba(42,157,143,0.15);
+  background: rgba(232,116,42,0.08);
+  border: 1px solid rgba(232,116,42,0.15);
   color: var(--color-teal);
   font-family: var(--font-heading);
   font-size: .8125rem;
@@ -111,10 +111,10 @@
 }
 .servico-breadcrumb:hover {
   color: var(--color-teal-light);
-  background: rgba(42,157,143,0.14);
-  border-color: rgba(42,157,143,0.3);
+  background: rgba(232,116,42,0.14);
+  border-color: rgba(232,116,42,0.3);
   transform: translateX(-4px);
-  box-shadow: 0 4px 16px rgba(42,157,143,0.12);
+  box-shadow: 0 4px 16px rgba(232,116,42,0.12);
 }
 .servico-breadcrumb:hover svg {
   transform: translateX(-3px);
@@ -130,8 +130,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(42, 157, 143, 0.12);
-  border: 1px solid rgba(42, 157, 143, 0.2);
+  background: rgba(232, 116, 42, 0.12);
+  border: 1px solid rgba(232, 116, 42, 0.2);
   border-radius: var(--radius-lg);
   margin-bottom: var(--space-5);
   color: var(--color-teal);
@@ -222,7 +222,7 @@
   height: 8px;
   border-radius: 50%;
   background: var(--color-teal);
-  box-shadow: 0 0 12px rgba(42, 157, 143, 0.35);
+  box-shadow: 0 0 12px rgba(232, 116, 42, 0.35);
 }
 .servico-features li strong {
   color: var(--color-text-prime);
@@ -357,7 +357,7 @@
   width: 46px;
   height: 46px;
   border-radius: 999px;
-  border: 1px solid rgba(42, 157, 143, 0.25);
+  border: 1px solid rgba(232, 116, 42, 0.25);
   background: rgba(20, 24, 32, 0.78);
   color: var(--color-teal);
   display: inline-flex;
@@ -372,7 +372,7 @@
 }
 .servico-carousel__btn:hover {
   transform: translateY(-2px);
-  border-color: rgba(42, 157, 143, 0.45);
+  border-color: rgba(232, 116, 42, 0.45);
   color: var(--color-teal-light);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
 }
@@ -521,17 +521,17 @@
   background:
     linear-gradient(
       155deg,
-      rgba(42, 157, 143, 0.08) 0%,
+      rgba(232, 116, 42, 0.08) 0%,
       rgba(255, 255, 255, 0.03) 45%,
       rgba(20, 24, 32, 0.3) 100%
     ),
     rgba(22, 26, 34, 0.78);
-  border: 1px solid rgba(42, 157, 143, 0.15);
+  border: 1px solid rgba(232, 116, 42, 0.15);
   backdrop-filter: blur(20px) saturate(1.2);
   -webkit-backdrop-filter: blur(20px) saturate(1.2);
   box-shadow:
     var(--shadow-md),
-    0 0 32px rgba(42, 157, 143, 0.06);
+    0 0 32px rgba(232, 116, 42, 0.06);
 }
 .servico-cta-card h3 {
   font-family: var(--font-heading);
@@ -649,9 +649,9 @@
     transform 0.3s var(--ease-spring);
 }
 .servico-outros__link:hover {
-  background: rgba(42, 157, 143, 0.08);
+  background: rgba(232, 116, 42, 0.08);
   color: var(--color-text-prime);
-  border-color: rgba(42, 157, 143, 0.12);
+  border-color: rgba(232, 116, 42, 0.12);
   transform: translateX(6px);
 }
 .servico-outros__link:hover::before {
@@ -666,9 +666,9 @@
   outline-offset: 1px;
 }
 .servico-outros__link.is-active {
-  background: rgba(42, 157, 143, 0.12);
+  background: rgba(232, 116, 42, 0.12);
   color: var(--color-teal-light);
-  border-color: rgba(42, 157, 143, 0.2);
+  border-color: rgba(232, 116, 42, 0.2);
   font-weight: 600;
 }
 .servico-outros__link.is-active::before {
@@ -819,7 +819,7 @@
     z-index: 2;
     width: 34px;
     height: 34px;
-    border-color: rgba(42, 157, 143, 0.35);
+    border-color: rgba(232, 116, 42, 0.35);
     background: rgba(12, 14, 20, 0.64);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);

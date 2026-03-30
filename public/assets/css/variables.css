@@ -6,15 +6,15 @@
   --color-charcoal:     #1E1B18;
   --color-gunmetal:     #2A2622;
 
-  /* ── Teal Cinematográfico ──────────────────────── */
-  --color-teal:         #2A9D8F;
-  --color-teal-light:   #4ECDC4;
-  --color-teal-pale:    #7EDDD6;
-  --color-teal-muted:   #1A6B63;
+  /* ── Orange Cinematográfico ─────────────────────── */
+  --color-teal:         #E8742A;
+  --color-teal-light:   #F5A623;
+  --color-teal-pale:    #FFC96B;
+  --color-teal-muted:   #B85A1E;
 
-  /* ── Acento — Orange frio (apenas realces sutis) ─ */
-  --color-accent:       #C4714A;
-  --color-accent-pale:  #D4886A;
+  /* ── Acento — Amber quente (realces sutis) ─────── */
+  --color-accent:       #F5A623;
+  --color-accent-pale:  #FFC96B;
 
   /* ── Metálicos (aquecidos) ──────────────────────── */
   --color-steel:        #8E897F;
@@ -41,7 +41,7 @@
   --shadow-md:   0 10px 25px rgba(0,0,0,.42);
   --shadow-lg:   0 20px 40px rgba(0,0,0,.48);
   --shadow-xl:   0 30px 60px rgba(0,0,0,.52);
-  --shadow-glow: 0 0 30px rgba(42,157,143,.15);
+  --shadow-glow: 0 0 30px rgba(232,116,42,.15);
 
   /* ── Tipografia Premium ────────────────────────── */
   --font-display: 'Poppins', 'Sora', sans-serif;

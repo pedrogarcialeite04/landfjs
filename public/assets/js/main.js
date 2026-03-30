@@ -109,7 +109,7 @@
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
     var material = new THREE.PointsMaterial({
-      color: 0x2a9d8f,
+      color: 0xe8742a,
       size: 0.14,
       transparent: true,
       opacity: 0.25,
@@ -651,11 +651,11 @@
   });
 
   // ═══════════════════════════════════════════════════
-  // CTA PULSE — teal glow
+  // CTA PULSE — orange glow
   // ═══════════════════════════════════════════════════
   if (!reduceMotion) {
     gsap.to('.hero-section .btn-primary', {
-      boxShadow: '0 0 28px rgba(42,157,143,.25)',
+      boxShadow: '0 0 28px rgba(232,116,42,.25)',
       duration: 2.2,
       repeat: -1,
       yoyo: true,
