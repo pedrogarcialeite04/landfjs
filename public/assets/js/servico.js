@@ -300,26 +300,26 @@
   }
   disableHeroVideo();
   if (heroImageEl && slug === 'levantamento-topografico') {
-    heroImageEl.src = './assets/images/levantamento-topografico/levantamento-topografico-.jpg';
+    heroImageEl.src = './assets/images/levantamento-topografico/53422916-1639079420685.jpg';
   }
   if (heroImageEl && slug === 'demarcacao') {
-    heroImageEl.src = './assets/images/demarcacao/herodem.jpg';
+    heroImageEl.src = './assets/images/demarcacao/terreno-4.jpg';
   }
   if (heroImageEl && slug === 'nivelamento') {
-    heroImageEl.src = './assets/images/nivelamento/nivelamento-de-terreno.jpg';
+    heroImageEl.src = './assets/images/nivelamento/terreno-1.jpg';
   }
   if (heroImageEl && slug === 'locacao-de-obra') {
-    heroImageEl.src = './assets/images/locacao-de-obra/hero1231.png';
+    heroImageEl.src = './assets/images/locacao-de-obra/Laje-predio.jpg';
   }
   if (heroImageEl && slug === 'calculo-de-volumetria') {
-    heroImageEl.src = './assets/images/calculo-de-volumetria/calcular-taxa-de-ocupacao.png';
+    heroImageEl.src = './assets/images/calculo-de-volumetria/represa-e1641389988290.jpg';
   }
   if (heroImageEl && slug === 'georreferenciamento') {
-    heroImageEl.src = './assets/images/geo/fdg.jfif';
+    heroImageEl.src = './assets/images/geo/GPS-AREA-1.jpg';
     heroImageEl.style.objectPosition = 'center 8%';
   }
   if (heroImageEl && slug === 'analise-por-drone') {
-    heroImageEl.src = './assets/images/drone/vantagens-topografia-com-drone.jpeg';
+    heroImageEl.src = './assets/images/drone/DJI_0012-1.jpg';
   }
   if (heroImageEl && slug === 'obra-damha-fit') {
     heroImageEl.src = './assets/images/aee.jpg';
